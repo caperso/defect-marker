@@ -1,0 +1,112 @@
+@import "antd/dist/antd.css";
+
+.defect-editor-wrapper {
+  .ant-modal-body {
+    padding: 15px 24px;
+  }
+
+  margin-top: 33px;
+  height: 500;
+
+  .add-defect-title {
+    width: 84px;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(186, 186, 186, 1);
+    cursor: default;
+  }
+
+  // 头部
+  .editor-header {
+    display: flex;
+    margin-bottom: 28px;
+    .name {
+      font: 24px;
+      color: #333;
+      font-weight: 700;
+      margin-right: 24px;
+    }
+    .update-date,
+    .create-date {
+      margin-right: 24px;
+    }
+
+    .tips {
+      height: 22px;
+      line-height: 22px;
+      font-size: 18px;
+      color: gray;
+      cursor: pointer;
+    }
+  }
+
+  // 操作
+  .editor-options {
+    display: flex;
+    justify-content: space-between;
+    height: 32px;
+    line-height: 32px;
+
+    .items,
+    .actions {
+      display: flex;
+      .item {
+        height: 32px;
+        line-height: 32px;
+        margin-right: 5px;
+        padding: 0 5px;
+        box-sizing: border-box;
+
+        &.selected,
+        &:hover {
+          border-radius: 2px;
+          cursor: pointer;
+      color: gray;
+        }
+      }
+    }
+
+    .actions {
+    }
+  }
+  .main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .image-controls {
+      display: flex;
+      flex-flow: row nowrap;
+      width: 100%;
+      justify-content: space-evenly;
+      align-items: center;
+      .editor-canvas {
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0;
+        background-color: whitesmoke;
+      }
+      .prev,
+      .next {
+        text-align: center;
+        flex: 1;
+        font-size: 32px;
+        cursor: pointer;
+        :hover {
+          color: gray;
+        }
+      }
+    }
+
+    .editor-brief {
+      width: 92.5%;
+      margin: 0 auto;
+      resize: none;
+      background: rgba(0, 0, 0, 0.2);
+      outline: none;
+    }
+  }
+}
