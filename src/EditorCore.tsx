@@ -177,14 +177,7 @@ export const EditorCore = forwardRef((props: Props, ref) => {
       infraredCanvas?.off("object:scaled");
       infraredCanvas?.off("selection:created");
     };
-  }, [
-    infraredCanvas,
-    defects,
-    setDefects,
-    currentDefect,
-    infraredRatio,
-    lightRatio
-  ]);
+  });
 
   // 监听绘制鼠标事件
   useEffect(() => {
@@ -240,14 +233,7 @@ export const EditorCore = forwardRef((props: Props, ref) => {
       infraredCanvas?.off("mouse:up");
       infraredCanvas?.off("mouse:moving");
     };
-  }, [
-    infraredCanvas,
-    defects,
-    setDefects,
-    currentDefect,
-    infraredRatio,
-    lightRatio
-  ]);
+  });
 
   // 监听缺陷池,生成轨迹
   useEffect(() => {
